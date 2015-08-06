@@ -24,7 +24,7 @@ That's uwsgi's job. uwsgi will create a Unix socket, and serve responses to ngin
     the outside world <-> nginx <-> the socket <-> uwsgi
 
 Before you start
-================
+==================
 
 virtualenv
 ----------
