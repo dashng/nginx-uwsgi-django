@@ -59,7 +59,7 @@ Install uwsgi
 
 ::
 
-pip install uwsgi
+	pip install uwsgi
 
 Basic test
 ----------
