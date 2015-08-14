@@ -17,9 +17,9 @@ Steps with explanations to set up a server using:
 Concept
 =======
 
-	>nginx will face the outside world. It will serve media files (images, CSS, etc) directly from the file system. However, it can't talk directly to Django applications; it needs something that will run the application, feed it requests from the web, and return responses.
+nginx will face the outside world. It will serve media files (images, CSS, etc) directly from the file system. However, it can't talk directly to Django applications; it needs something that will run the application, feed it requests from the web, and return responses.
 
->That's uwsgi's job. uwsgi will create a Unix socket, and serve responses to nginx via the uwsgi protocol - the socket passes data in both directions::
+That's uwsgi's job. uwsgi will create a Unix socket, and serve responses to nginx via the uwsgi protocol - the socket passes data in both directions::
 
     the outside world <-> nginx <-> the socket <-> uwsgi
 
